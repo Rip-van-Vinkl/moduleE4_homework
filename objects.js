@@ -20,7 +20,7 @@ function getOnlyOwnProperty(person) {
     }
 }
 
-getOnlyOwnProperty(student);
+getOnlyOwnProperty(student); //"Piter" "Andrei" "Ivanov" 18 "developer"
 
 // №2
 
@@ -36,8 +36,8 @@ function findKey(person, string) {
       return sum;
     }
 
-console.log(findKey(student, string1));
-console.log(findKey(student, string2));
+console.log(findKey(student, string1)); //true
+console.log(findKey(student, string2)); //false
 
 // №3 я это тупо подсмотрел в интернете
 
@@ -45,4 +45,4 @@ function createObjectWithoutPrototyp(){
     return Object.create(null);
 }
 
-console.log(Object.getPrototypeOf(createObjectWithoutPrototyp()));
+console.log(Object.getPrototypeOf(createObjectWithoutPrototyp())); //null
